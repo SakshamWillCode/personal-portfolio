@@ -1,0 +1,214 @@
+/* General Styles */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #222;
+}
+
+/* Header */
+
+header {
+    background-color: #1f2937;
+    color: white;
+    padding: 25px 8%;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+/* Navigation */
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #1f2937;
+}
+
+/* About */
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-content img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Skills */
+
+dl {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 12px;
+}
+
+dt {
+    font-weight: bold;
+    color: #2563eb;
+}
+
+dd {
+    margin: 0;
+}
+
+/* Projects */
+
+.project-container {
+    display: flex;
+    gap: 20px;
+}
+
+article {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9fafb;
+}
+
+article h3 {
+    color: #2563eb;
+}
+
+article a {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* Contact Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font: inherit;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: fit-content;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1f0435;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2b4794;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #133361;
+    color: rgb(192, 151, 151);
+}
+
+/* Mobile Layout */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project-container {
+        flex-direction: column;
+    }
+
+    dl {
+        display: block;
+    }
+
+    dt {
+        margin-top: 15px;
+    }
+
+    dd {
+        margin-bottom: 10px;
+    }
+}

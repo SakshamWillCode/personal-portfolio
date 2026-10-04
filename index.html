@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saksham's Personal Portfolio</title>
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Saksham's Personal Portfolio</h1>
+        <h1>My Personal Portfolio</h1>
 
         <nav>
             <ul>
@@ -26,14 +27,16 @@
         <section id="about">
             <h2>About Me</h2>
 
-            <img src="images/profile.jpeg" alt="Profile photo" width="200">
+            <div class="about-content">
+                <img src="images/profile.jpeg" alt="Profile photo of the portfolio owner">
 
-            <p>
-                Hello! My name is Saksham. I am a student interested in
-                information technology, web development, and programming.
-                I enjoy learning new technologies and building simple
-                projects to improve my technical skills.
-            </p>
+                <p>
+                    Hello! My name is Saksham. I am a student interested
+                    in information technology, web development, and programming.
+                    I enjoy learning new technologies and building projects to
+                    improve my technical skills.
+                </p>
+            </div>
         </section>
 
         <section id="skills">
@@ -43,6 +46,9 @@
                 <dt>HTML5</dt>
                 <dd>Creating structured and semantic web pages.</dd>
 
+                <dt>CSS</dt>
+                <dd>Designing responsive and visually appealing websites.</dd>
+
                 <dt>Python</dt>
                 <dd>Developing basic programs, scripts, and applications.</dd>
 
@@ -50,42 +56,42 @@
                 <dd>Managing and publishing source code using version control.</dd>
 
                 <dt>Canva</dt>
-                <dd>Creating basic digital designs and visual content.</dd>
+                <dd>Creating digital designs and visual content.</dd>
             </dl>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
 
-            <article>
-                <h3>Personal Budget Planner</h3>
+            <div class="project-container">
 
-                <p>
-                    A simple Python project designed to track income,
-                    expenses, and savings.
-                </p>
+                <article>
+                    <h3>Personal Budget Planner</h3>
 
-                <p>
+                    <p>
+                        A Python project designed to track income, expenses,
+                        and savings.
+                    </p>
+
                     <a href="https://github.com/yourusername/budget-planner">
-                        View Budget Planner Repository
+                        View Repository
                     </a>
-                </p>
-            </article>
+                </article>
 
-            <article>
-                <h3>Portfolio Website</h3>
+                <article>
+                    <h3>Portfolio Website</h3>
 
-                <p>
-                    A semantic HTML5 portfolio website created without
-                    CSS or JavaScript.
-                </p>
+                    <p>
+                        A responsive personal portfolio created using
+                        semantic HTML5 and CSS.
+                    </p>
 
-                <p>
                     <a href="https://github.com/yourusername/personal-portfolio">
-                        View Portfolio Repository
+                        View Repository
                     </a>
-                </p>
-            </article>
+                </article>
+
+            </div>
         </section>
 
         <section id="contact">
@@ -93,24 +99,16 @@
 
             <form action="#" method="post">
 
-                <p>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-                </p>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
 
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                </p>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
 
-                <p>
-                    <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" rows="5" cols="30" required></textarea>
-                </p>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
 
-                <p>
-                    <button type="submit">Send Message</button>
-                </p>
+                <button type="submit">Send Message</button>
 
             </form>
         </section>
@@ -118,7 +116,7 @@
     </main>
 
     <footer>
-        <p> 2026 Saksham.</p>
+        <p>Saksham</p>
     </footer>
 
 </body>
